@@ -1,0 +1,73 @@
+/* Reset de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Para que el contenedor ocupe toda la altura */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('hd-jurassic-park-movie-scene-ucyjkewbywehk7ij.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima de toda la ventana */
+    max-width: 1200px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Para empujar el contenido hacia el espacio entre el header y el footer */
+.content {
+    flex: 1;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: #000000;
+    margin: 0;
+}
+.content p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.content a {
+    font-size: 2rem;
+    color: #f3f8fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* El footer se coloca al final gracias a Flexbox */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
